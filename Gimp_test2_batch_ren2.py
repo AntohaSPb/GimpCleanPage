@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # GIMP plugin that clears photos with text pages
 # Source - BW or Color image, output - Grayscale image
-# Written by Anton Ivanov of PLAVMAYAK.RU team
-# Contacts: anton.b.ivanov@gmail.com
+# Written by Anton Ivanov for PLAVMAYAK.RU
 # Distributed under an MIT License
 
 from gimpfu import *
@@ -116,7 +115,7 @@ register(
                  ("Luminosity", DESATURATE_LUMA),
                  ("Average", DESATURATE_AVERAGE),
                  ("Luminance", DESATURATE_LUMINANCE),
-                 ("Average", DESATURATE_VALUE),
+                 ("Value", DESATURATE_VALUE),
             ),
         ),
         (PF_SLIDER, "bradius", "Blur: Radius ", 160.0, (10, 300, 5)),
